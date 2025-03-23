@@ -2,7 +2,10 @@
   <header>
     <h2>{{ userName }}</h2>
     <menu>
-      <a>Add Task</a>
+      <!-- relative path -->
+      <a routerLink="tasks/new">Add Task</a>
+      <!-- absoulte path -->
+      <!-- <a routerLink="users/<uid>/tasks/new">Add Task</a> -->
     </menu>
   </header>
   <router-outlet />
