@@ -8,6 +8,7 @@ export const routes = [
   {
     path: '',
     component: NoTaskComponent, //<your-domain>
+    title: 'No Task selected',
   },
   {
     path: 'users/:userId', //<your-domain>/users/<uid>
@@ -17,15 +18,18 @@ export const routes = [
         // will append the parent route
         path: 'tasks', //<your-domain>/users/<uid>/tasks
         component: TasksComponent,
+        title: 'User Tasks',
       },
       {
         path: 'tasks/new', //<your-domain>/users/<uid>/tasks/new
         component: NewTaskComponent,
+        title: 'Add Task',
       },
     ],
   },
   {
     path: '**',
     component: NotFoundComponent,
+    title: 'Error Page',
   },
 ];
